@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Car List</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button type="button" class="NewCarForm" onclick="OpenModalAdd()">New car form</button>
+<ul class="MainUl"></ul>
+
+<div class="w3-modal" id="myModalAdd">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-green">
+      <h3>Add a car</h3>
+    </div>
+    <div>
+     <input type="text" class="AddInp">
+	<select class="SelAdd">
+	<option value="Japan">Japan</option>
+	<option value="Germany">Germany</option>
+	<option value="Kyrgyzstan">Kyrgyzstan</option>
+	</select>
+	<button type="button" class="AddACar" onclick="CloseModalAdd()">Add a car</button>
+    </div>
+    <div class="w3-container w3-green">
+      <div class="ModalBtns">
+    <button type="button" class="w3-btn w3-green addclose" onclick="CloseModalAdd()">Закрыть</button>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="w3-modal" id="myModalShow">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-green">
+      <h3 class="TitleShow"></h3>
+    </div>
+    <div>
+	<p class="PShow"></p>
+	<button type="button" class="NewCarShow">New Car Model</button>
+	<ul class="ModelUl"></ul>
+    </div>
+    <div class="w3-container w3-green">
+      <div class="ModalBtns">
+    <button type="button" class="w3-btn w3-green showclose" onclick="CloseModalShow()">Закрыть</button>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="w3-modal" id="myModalEdit">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-green">
+      <h3>Edit</h3>
+    </div>
+    <div>
+		<input class="InpEdit">
+	<select class="SelEdit">
+	<option value="Japan">Japan</option>
+	<option value="Germany">Germany</option>
+	<option value="Kyrgyzstan">Kyrgyzstan</option>
+	</select>
+	<button class="EditSave"  onclick="CloseModalEdit()">Edit</button>
+    </div>
+    <div class="w3-container w3-green">
+      <div class="ModalBtns">
+    <button type="button" class="w3-btn w3-green showclose" onclick="CloseModalEdit()">Закрыть</button>
+  </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="jquery.3.2.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
